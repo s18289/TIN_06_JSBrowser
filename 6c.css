@@ -1,0 +1,11 @@
+input {
+  outline: none;
+}
+
+.invalidAge {
+  border: 2px solid red;
+}
+
+.validAge {
+  border: 2px solid green;
+}

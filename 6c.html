@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./6c.css" />
+    <script defer src="./6c.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <form onsubmit="return false">  <!-- do not refresh the page, so you can see isValidForm() true result -->
+      <label>age</label>
+      <input id="age" class="age" type="number" required />
+      <label>email</label>
+      <input id="email" class="email" type="text" required />
+      <button id="btn" onclick="return isValidForm()">Send data</button>
+    </form>
+  </body>
+</html>

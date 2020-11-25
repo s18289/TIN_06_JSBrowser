@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./6d.css" />
+    <script defer src="./6d.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <table id="table">
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+        <th>Email</th>
+      </tr>
+      <tr>
+        <td>Anna</td>
+        <td>Nowak</td>
+        <td>24</td>
+        <td>nowak.anna24@.pl</td>
+      </tr>
+    </table>
+    <form id="newRecord" class="newRecord">
+      <label>Firstname*</label>
+      <input id="firstName" type="text" required />
+      <label>Lastname*</label>
+      <input id="lastName" type="text" required />
+      <label>Age*</label>
+      <input id="age" type="number" min="1" required />
+      <label>Email*</label>
+      <input id="email" type="email" required />
+      <button id="btn" onclick="addRow('table')">Add row</button>
+    </form>
+  </body>
+</html>
